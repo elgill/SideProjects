@@ -8,7 +8,7 @@ from tkinter import messagebox
 #   DESCRIPTION: Class to encapsulate Application window
 #----------------------------------------------------------------------------------------------------#
 class App_Window:
-    letters=""
+    letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
     #----------------------------------------------------------------------------------------------------#
     #   NAME: __init__
@@ -66,6 +66,14 @@ class App_Window:
     #----------------------------------------------------------------------------------------------------#
     def handleError(self,e):
         messagebox.showerror('Python Error', e)
+
+class Wordle_Board:
+    letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+
+
+class Wordle_Block:
+    #yellow,green,gray,undefined
+    status=""
 
 #----------------------------------------------------------------------------------------------------#
 #   Entry Point for initialization
