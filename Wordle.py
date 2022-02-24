@@ -73,7 +73,29 @@ class Wordle_Board:
 
 class Wordle_Block:
     #yellow,green,gray,undefined
-    status=""
+    #status=""
+    #----------------------------------------------------------------------------------------------------#
+    #   NAME: toggle_status
+    #   DESCRIPTION: Function to toggle between colors
+    #   PARAMS: self - Wordle_Block object
+    #   RETURN: None
+    #----------------------------------------------------------------------------------------------------#
+    def toggle_status(self):
+        if self.status=="yellow":
+            self.status="green"
+        elif self.status=="green":
+            self.status="gray"
+        else:
+            self.status="yellow"
+    
+    #----------------------------------------------------------------------------------------------------#
+    #   NAME: __init__
+    #   DESCRIPTION: Create Object
+    #   PARAMS: self - Wordle_Block object
+    #   RETURN: None
+    #----------------------------------------------------------------------------------------------------#
+    def __init__(self):
+        self.status="gray"
 
 #----------------------------------------------------------------------------------------------------#
 #   Entry Point for initialization
