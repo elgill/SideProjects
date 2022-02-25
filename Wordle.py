@@ -87,7 +87,17 @@ class Wordle_Block:
             self.status="gray"
         else:
             self.status="yellow"
-    
+
+    #----------------------------------------------------------------------------------------------------#
+    #   NAME: set_letter
+    #   DESCRIPTION: Sets letter for object
+    #   PARAMS: self - Wordle_Block object
+    #           letter - letter to set
+    #   RETURN: None
+    #----------------------------------------------------------------------------------------------------#   
+    def set_letter(self,letter):
+        self.letter=letter
+
     #----------------------------------------------------------------------------------------------------#
     #   NAME: __init__
     #   DESCRIPTION: Create Object
