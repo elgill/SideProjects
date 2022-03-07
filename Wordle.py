@@ -68,7 +68,25 @@ class App_Window:
         messagebox.showerror('Python Error', e)
 
 class Wordle_Board:
-    letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]    
+    #----------------------------------------------------------------------------------------------------#
+    #   NAME: getWordAnswer
+    #   DESCRIPTION: Return a random word from the answer list
+    #   PARAMS: self - Wordle_Board object
+    #   RETURN: None
+    #----------------------------------------------------------------------------------------------------#
+    def getWordAnswer(self):
+        return "0"
+
+    #----------------------------------------------------------------------------------------------------#
+    #   NAME: __init__
+    #   DESCRIPTION: Create Object
+    #   PARAMS: self - Wordle_Board object
+    #   RETURN: None
+    #----------------------------------------------------------------------------------------------------#
+    def __init__(self):
+        self.answer=getWordAnswer()
+    
 
 
 class Wordle_Block:
