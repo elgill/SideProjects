@@ -85,7 +85,8 @@ class Wordle_Board:
     #   RETURN: None
     #----------------------------------------------------------------------------------------------------#
     def __init__(self):
-        self.answer=getWordAnswer()
+        self.answer=self.getWordAnswer()
+
     
 
 
