@@ -70,12 +70,12 @@ class App_Window:
 class Wordle_Board:
     letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]    
     #----------------------------------------------------------------------------------------------------#
-    #   NAME: getWordAnswer
+    #   NAME: pickAnswer
     #   DESCRIPTION: Return a random word from the answer list
     #   PARAMS: self - Wordle_Board object
     #   RETURN: None
     #----------------------------------------------------------------------------------------------------#
-    def getWordAnswer(self):
+    def pickAnswer(self):
         return "0"
 
     #----------------------------------------------------------------------------------------------------#
@@ -85,7 +85,7 @@ class Wordle_Board:
     #   RETURN: None
     #----------------------------------------------------------------------------------------------------#
     def __init__(self):
-        self.answer=self.getWordAnswer()
+        self.answer=self.pickAnswer()
 
     
 
